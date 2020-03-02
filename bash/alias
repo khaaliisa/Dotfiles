@@ -9,6 +9,7 @@ alias doc='cd ~/Documents'
 alias download='cd ~/Downloads'
 alias music='cd ~/Music'
 alias project='cd ~/Projects'
+alias tree2='tree -L 2 .'
 
 # Git shortcuts
 alias gbr='git checkout --track $(git branch -a | fzf)'

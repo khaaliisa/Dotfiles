@@ -10,6 +10,7 @@ alias download='cl ~/Downloads'
 alias music='cl ~/Music'
 alias project='cl ~/Projects'
 alias dotfile='cl ~/Dotfiles'
+alias tree2='tree -L 2 .'
 
 # Git shortcuts
 alias gbr='git checkout --track (git branch -a | fzf)'
@@ -27,7 +28,6 @@ alias sysinfo='top -o cpu -O +rsize -s 5 -n 20 -stats pid,command,cpu,mem,th,pst
 
 # Speed test
 alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
-
 
 # Setting PATH for Python 3.7
 export PATH
@@ -121,3 +121,7 @@ end
 function focus
     afplay ~/Music/focus.mp3 &
 end
+
+# pyenv setup
+source (pyenv init - | psub)
+source (pyenv virtualenv-init - | psub)
