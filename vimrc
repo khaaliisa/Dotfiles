@@ -1,3 +1,4 @@
+set textwidth=80
 set relativenumber
 syntax on
 set autoindent

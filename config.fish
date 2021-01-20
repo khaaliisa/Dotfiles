@@ -1,6 +1,6 @@
 # Set default alias 
 alias python='python3'
-alias lsa='ls -la'
+alias lsa='ls -lh'
 alias vi='nvim'
 
 # directory shortcuts
