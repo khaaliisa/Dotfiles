@@ -122,6 +122,13 @@ function focus
     afplay ~/Music/focus.mp3 &
 end
 
-# pyenv setup
-source (pyenv init - | psub)
-source (pyenv virtualenv-init - | psub)
+function note
+    vi ~/Documents/Notes/diary/(date +"%Y-%m-%d").md
+end
+
+function push_note
+    cd ~/Documents/Notes
+    ga .
+    gcm "Add diary entry for "(date +%x)
+    git push
+end
